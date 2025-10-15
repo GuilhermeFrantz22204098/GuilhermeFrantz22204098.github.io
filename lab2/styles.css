@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: lightgray;
+}
+h1 {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+nav, footer {
+    padding: 8px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+main {
+    padding: 16px;
+    margin: 16px;
+    background-color: white;
+    border-radius: 8px;
+}
+main > * {
+    padding: 8px;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

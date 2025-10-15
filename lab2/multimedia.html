@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lisboa</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <style>
+            .fotografias {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .fotografias img {
+                width: 150px;
+                border-radius: 20px;
+            }
+            #div-poema p:nth-child(2n){
+                color:blue;
+            }
+            #div-poema p:nth-child(2n+1){
+                color:orangered;
+            }
+            #div-poema {
+                margin: auto;
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Lisboa</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localizacao</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informacao</a>
+        </nav>
+        <main>
+            <h2>Multimedia</h2>
+            <p>Lisboa é muito linda!!!</p>
+            <p>
+                <a href="#fotografias">Fotografias</a>
+                <a href="#video">Vídeo</a>
+                <a href="#poema">Poema</a>
+            </p>
+            <section>
+                <h3 id="fotografias">Fotografias</h3>
+                <div class="fotografias">
+                    <img src="images/lisbphoto1.jpg" alt="Torre de Belém">
+                    <img src="images/lisbphoto2.jpg" alt="">
+                    <img src="images/lisbphoto3.jpg" alt="vista 3">
+                    <img src="images/lisbphoto4.jpg" alt="vista 4">
+                    <img src="images/lisbphoto5.jpg" alt="vista 5">
+                    <img src="images/lisbphoto6.jpg" alt="vista 6">
+                    <img src="images/lisbphoto7.jpg" alt="vista 7">
+                    <img src="images/lisbphoto8.jpg" alt="vista 8">
+                </div>
+            </section>
+            <section>
+                <h3 id="video">Vídeo</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bin1J-upU-w?si=jvs4XMzrfanCe52w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section>
+                <h3 id="poema">Poema</h3>
+                <div id="div-poema">
+                    <p>Lisboa azul, vibrante.</p>
+                    <p>Sete colinas antigas</p>
+                    <p>Elétricos amarelos sobem</p>
+                    <p>Saudades, luz suave</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>DIW 2025</p>
+        </footer>
+    </body>
+</html>
