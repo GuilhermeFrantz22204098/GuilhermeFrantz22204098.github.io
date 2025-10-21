@@ -1,7 +1,138 @@
-body {
-    background-color: #b3b3b3;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 img {
     width: 300px;
+}
+
+section {
+    height: 100vh;
+}
+
+header {
+    background: red;
+    position: sticky;
+    height: 10vh;
+    top: 0;
+    z-index: 10;
+}
+
+#hero-section {
+    background: purple;
+    background-image: url(images/family.png);
+    background-size: cover;
+    position: relative;
+}
+
+#projects-section {
+    background: yellow;
+}
+
+#uc-section {
+    background: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+
+#uc-section #info-uc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 900px;
+    align-items: center;
+}
+
+#motivational {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-size: 4rem;
+    color: white;
+}
+
+#cta {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    padding: 1rem;
+    background: green;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    border: 4px solid white
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#projects-section {
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 90%;
+    padding: 0;
+}
+
+.proj-card {
+    max-width: 300px;
+    flex-basis: auto;
+    padding: 1rem;
+    background: salmon;
+    border: 1px solid white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #uc-section #info-uc {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    #uc-section h2 {
+        margin-bottom: 40px;
+    }
+
+    #uc-section #info.uc>div {
+        flex-basis: 45%;
+        text-align: left;
+    }
+
+    #uc-section img {
+        flex-basis: 45%;
+        max-width: 400px;
+        width: auto;
+    }
 }

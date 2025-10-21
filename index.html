@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guilherme Frantz</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    
+
     <header>
         <h1>
             Primeira Página Web!
         </h1>
     </header>
-    <main>
-        <p>Eis a minha primeira página Web...</p>
-        <p>
-            Na UC de 
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">Desenvolvimento de Interfaces Web</a>
-        abordaremos as seguintes tecnologias web &#127760;:
-        </p>
+    <nav>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>React e Next.js</li>
+            <li><a href="lab1/index.html">Lab1</a></li>
+            <li><a href="lab2/index.html">Lab2</a></li>
+            <li><a href="lab3/index.html">Lab3</a></li>
         </ul>
-        <p>Iremos criar soluções criativas!</p>
+    </nav>
+    <main>
+        <section id="hero-section">
+            <nav>
+                <ul>
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                    <li><a href="#uc-section">Web Interfaces</a></li>
+                </ul>
+            </nav>
+            <p id="motivational">text motivational</p>
+            <a id="cta" href="#projects-section">See projects</a>
+        </section>
+        <section id="projects-section">
+            <h2>Projects</h2>
+            <div id="projects">
+                <div class="proj-card">
+                    <h3>Proj 1</h3>
+                    <p>hdjkahskhakhskashhdajkhdjkhajksdhkahs</p>
+                </div>
+                <div class="proj-card">
+                    <h3>Proj 2</h3>
+                    <p>hdjkahskhakhskashhdajkhdjkhajksdhkahs</p>
+                </div>
+                <div class="proj-card">
+                    <h3>Proj 3</h3>
+                    <p>hdjkahskhakhskashhdajkhdjkhajksdhkahs</p>
+                </div>
+            </div>
+        </section>
+        <section id="uc-section">
+            <h2>Interfaces Web e a Wordcloud da Disciplina</h2>
+            <div id="info-uc">
+                <div>
+                    <p>
+                        Na UC de
+                        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232"
+                            target="_blank">Desenvolvimento de Interfaces Web</a>
+                        abordaremos as seguintes tecnologias web &#127760;:
+                    </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>React e Next.js</li>
+                    </ul>
+                    <p>Iremos criar soluções criativas!</p>
+                </div>
+                <img src="images/diw.png" alt="Desenvolvimento de Interfaces Web - Wordcloud" />
+            </div>
+        </section>
 
-        <nav>
-            <ul>
-                <li><a href="lab1/index.html">Lab1</a></li>
-                <li><a href="lab2/index.html">Lab2</a></li>
-            </ul>
-            
-        </nav>
-        <img src="images/diw.png" alt="Desenvolvimento de Interfaces Web"/> 
     </main>
     <footer>
         <p>Universidade Lusófona - 2025</p>
     </footer>
 </body>
-</html>
+
+</html>>

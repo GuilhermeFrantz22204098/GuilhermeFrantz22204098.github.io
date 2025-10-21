@@ -1,0 +1,286 @@
+* {
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+body {
+
+  background-color: lightgray;
+
+}
+
+header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+
+
+  padding: 10px;
+
+  background: whitesmoke;
+
+}
+
+h1 {
+
+  background-color: green;
+
+  color: white;
+
+  padding: 16px;
+
+  text-align: center;
+
+}
+
+nav,
+footer {
+
+  padding: 8px;
+
+  color: white;
+
+  text-align: center;
+
+}
+
+main {
+
+  padding: 16px;
+
+  margin: 16px;
+
+  background-color: white;
+
+  border-radius: 8px;
+
+}
+
+main>* {
+
+  padding: 8px;
+
+}
+
+footer {
+
+  position: fixed;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+}
+
+
+
+nav {
+
+  display: flex;
+
+  gap: 10px;
+
+}
+
+
+
+nav a {
+
+  padding: 10px 20px;
+
+  background-color: white;
+
+  text-decoration: none;
+
+  color: black;
+
+  border-radius: 5px;
+
+}
+
+
+
+a:hover {
+
+  filter: brightness(90%);
+
+}
+
+
+
+h1 {
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+
+
+.hamburguer {
+
+  display: none;
+
+}
+
+#fotografias-lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#fotografias-lista img {
+  width: 150px;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+#fotografias-lista img:hover {
+  opacity: 50%;
+}
+
+#div-poema p:nth-child(2n) {
+  color: blue;
+}
+
+#div-poema p:nth-child(2n+1) {
+  color: orangered;
+}
+
+#div-poema {
+  margin: auto;
+  text-align: center;
+
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  width: 40%;
+}
+
+#emblematic-section {
+  position: relative;
+}
+
+#emblematic-section img {
+  width: 100%;
+}
+
+#emblematic-section p {
+  font-size: 4vw;
+  color: yellow;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+}
+
+#location-section div {
+  display: flex;
+}
+
+
+
+#info-title {
+  grid-area: info-title-area;
+  background: red;
+}
+
+#info-table {
+  grid-area: info-table-area;
+  background: yellow;
+}
+
+#info-list {
+  grid-area: info-list-area;
+  background: green;
+}
+
+#info-img1 {
+  grid-area: info-img1-area;
+  background: blue;
+}
+
+#info-img2 {
+  grid-area: info-img2-area;
+  background: pink;
+}
+
+#info-main {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 1fr 1fr;
+  grid-template-areas:
+    'info-title-area info-title-area info-img1-area'
+    'info-table-area info-table-area .'
+    'info-img2-area . info-list-area';
+}
+
+#info-main>* {
+  display: flex;
+  justify-content: center;
+}
+
+#info-img1 img,
+#info-img2 img {
+  height: 100%;
+}
+
+.parallax {
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/29/21/36/beach-2456298_1280.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width: 600px) {
+  #location-section div {
+    flex-direction: column;
+  }
+
+  header,
+  nav {
+
+    flex-direction: column;
+
+  }
+
+  nav {
+
+    display: none;
+
+  }
+
+  header:hover nav {
+
+    display: flex;
+
+  }
+
+  .hamburguer {
+
+    display: block;
+
+  }
+
+}
