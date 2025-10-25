@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>This is an interactive page for the 4th <a href="../index.html">DIW</a> Lab</h1>
+    </header>
+
+    <main>
+        <section id="section-jumper">
+            <h2 id="jumper-challenge">Bet you can't click this button 5 times!</h2>
+            <div id="jumper-container">
+                <button id="jumper-button">0</button>
+            </div>
+        </section>
+
+        <section id="section-odd">
+            <h2 id="odd-challenge">Find the odd one (mouseover)</h2>
+            <div id="odd-container">
+                <div id="odd-grid"></div>
+            </div>
+        </section>
+
+        <section id="section-still">
+            <h2 id="still-challenge">Stand still...</h2>
+            <div id="still-container">
+                <img id="still-image" src="images/nolook.jpg" alt="No Look">
+            </div>
+        </section>
+
+        <section id="section-secret">
+            <h2 id="secret-challenge">Figure out the secret</h2>
+            <div id="secret-container">
+                <p id="secret-feedback">What's the secret?</p>
+                <button id="secret-button" ondblclick="reveal()">Secret</button>
+            </div>
+        </section>
+
+        <section id="section-workout">
+            <h2 id="workout-challenge">Mouse Workout</h2>
+            <div id="workout-container" onmousemove="countMovement(event)">
+                <p>You workout to be healthy, I workout because number go up: <strong id="workout-value">0</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Guilherme Frantz, DIW 25/26</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
