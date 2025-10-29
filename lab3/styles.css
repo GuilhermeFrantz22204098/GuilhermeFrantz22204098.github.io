@@ -1,136 +1,81 @@
 * {
-
   padding: 0;
-
   margin: 0;
-
 }
 
 body {
-
   background-color: lightgray;
-
 }
 
 header {
-
   display: flex;
-
   justify-content: space-between;
-
   gap: 10px;
-
-
-
   padding: 10px;
-
   background: whitesmoke;
-
 }
 
 h1 {
-
   background-color: green;
-
   color: white;
-
   padding: 16px;
-
   text-align: center;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 nav,
 footer {
-
   padding: 8px;
-
   color: white;
-
   text-align: center;
-
 }
 
 main {
-
   padding: 16px;
-
   margin: 16px;
-
   background-color: white;
-
   border-radius: 8px;
-
 }
 
 main>* {
-
   padding: 8px;
-
 }
 
 footer {
-
   position: fixed;
-
   left: 0;
-
   bottom: 0;
-
   width: 100%;
-
 }
-
-
 
 nav {
-
   display: flex;
-
   gap: 10px;
-
 }
-
-
 
 nav a {
-
   padding: 10px 20px;
-
   background-color: white;
-
   text-decoration: none;
-
   color: black;
-
   border-radius: 5px;
-
 }
-
-
 
 a:hover {
-
   filter: brightness(90%);
-
 }
-
-
 
 h1 {
-
   display: flex;
-
   justify-content: space-between;
-
 }
 
-
-
 .hamburguer {
-
   display: none;
-
 }
 
 #fotografias-lista {
@@ -161,7 +106,6 @@ h1 {
 #div-poema {
   margin: auto;
   text-align: center;
-
 }
 
 table,
@@ -194,8 +138,6 @@ th {
 #location-section div {
   display: flex;
 }
-
-
 
 #info-title {
   grid-area: info-title-area;
@@ -252,7 +194,6 @@ th {
   background-size: cover;
 }
 
-
 @media (max-width: 600px) {
   #location-section div {
     flex-direction: column;
@@ -260,27 +201,18 @@ th {
 
   header,
   nav {
-
     flex-direction: column;
-
   }
 
   nav {
-
     display: none;
-
   }
 
   header:hover nav {
-
     display: flex;
-
   }
 
   .hamburguer {
-
     display: block;
-
   }
-
 }

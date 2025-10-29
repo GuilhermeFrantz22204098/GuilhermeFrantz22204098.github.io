@@ -32,6 +32,10 @@ main {
 main > * {
     padding: 8px;
 }
+
+header a {
+    text-decoration: none;
+}
 footer {
   position: fixed;
   left: 0;
