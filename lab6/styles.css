@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    color: dimgray;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    background-color: white;
+    color: dimgray;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid lightgray;
+}
+
+.main-header h1 {
+    font-size: 2rem;
+}
+
+.main-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-header nav a {
+    color: dimgray;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+.main-header nav a:hover {
+    color: black;
+}
+
+/* Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+#products, #cart {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: dimgray;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.product-card {
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+    max-width: 12rem;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.product-card button {
+    background-color: tan;
+    color: black;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: burlywood;
+}
+
+/* Footer */
+.main-footer {
+    background-color: white;
+    color: dimgray;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid lightgray;
+}
