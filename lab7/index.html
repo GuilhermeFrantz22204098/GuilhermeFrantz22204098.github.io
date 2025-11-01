@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIW Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>DIW Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="products">
+            <h2>Our Products</h2>
+
+            <section class="filter-container">
+                <label for="category-filter">Filter:</label>
+                <select id="category-filter">
+                    <option value="all">All categories</option>
+                </select>
+
+                <label for="sort-filter">Sort:</label>
+                <select id="sort-filter">
+                    <option value="default">Default</option>
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+                <label for="search-input">Search:</label>
+                <input type="search" id="search-input" placeholder="Search...">
+            </section>
+            <section id="product-list" class="product-container"></section>
+        </section>
+
+        <aside id="cart">
+            <h2>Cart</h2>
+            <section id="cart-items" class="product-container"></section>
+
+            <section id="cart-total">
+                <h3>Total: €0.00</h3>
+            </section>
+
+            <section id="checkout-form">
+                <p>
+                    <label for="student-checkbox">
+                        <input type="checkbox" id="student-checkbox"> Are you a DEISI student?
+                    </label>
+                </p>
+                <p>
+                    <label for="coupon-input">Discount coupon:</label>
+                    <input type="text" id="coupon-input" placeholder="e.g. black-friday">
+                </p>
+                <p>
+                    <label for="name-input">Your Name:</label>
+                    <input type="text" id="name-input" placeholder="e.g. Maria">
+                </p>
+                <button id="buy-button">Buy</button>
+
+                <p id="checkout-message"></p>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
+        <p>Guilherme Frantz - DIW 25/26</p>
+    </footer>
+
+    <script src="produtos.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
